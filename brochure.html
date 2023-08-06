@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+            background-color: #888;
+            /* Grey color for the background */
+            position: sticky;
+            top: 0;
+            /* Make the navbar sticky at the top */
+            z-index: 999; /* Ensure the navbar is above other elements */
+        }
+
+        .navbar-nav {
+            flex-grow: 1;
+            /* Use flex-grow to distribute available space */
+            justify-content: center;
+            /* Center the links in the navbar */
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+            /* Add space between the links */
+        }
+
+        a:hover {
+            background: grey;
+            color: #AAAAAA;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    /* Custom CSS */
+    .navbar {
+      background-color: #888; /* Grey color for the background */
+    }
+
+    .navbar-nav {
+      flex-grow: 1; /* Use flex-grow to distribute available space */
+      justify-content: center; /* Center the links in the navbar */
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 15px; /* Add space between the links */
+    }
+
+    a:hover {
+        background:grey;
+        color: #AAAAAA;
+    }
+
+    .brochure-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px; /* Adjust the top margin as needed */
+    }
+
+    .brochure-images .project-container {
+      width: calc(100% - 40px); /* Adjust the width and margin as needed for responsiveness */
+      margin: 10px;
+      border-radius: 20px; /* Adjust the value to control the roundness of the border */
+      overflow: hidden; /* This ensures that the images stay within the rounded container */
+      height: auto; /* Adjust the height to fit the image within the viewport */
+    }
+
+    .brochure-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the entire image is visible without distortion */
+    }
+    .project-image {
+  max-height: 400px;
+  width: auto; /* This ensures the image maintains its aspect ratio */
+}
+
+  </style>
+</head>
+<body>
+  <div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a    style="font-size: large; font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="   navbar-brand" href="#">YOGI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto"> <!-- Use mx-auto class to center the links -->
+          <a  style="font-size: large; color: black; font-weight: bold;"  class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a  style=" font-size: large; color: black; font-weight: bold;" class="nav-item nav-link" href="videos.html">Videos</a>
+          <a  style=" font-size: large;  color: black; font-weight: bold;" class="nav-item nav-link" href="brochure.html">Brochure</a>
+  
+        </div>
+      </div>
+    </nav> 
+    <main>
+        <div class="brochure-images">
+          <!-- Add separate containers for images of your client's projects here -->
+          <div class="project-container">
+            <img src="media/yogi1.jpg" alt="Project 1">
+          </div>
+          <div class="project-container">
+            <img src="media/kitchen.jpg" alt="Project 2">
+          </div>
+          <!-- Add more containers for other projects -->
+        </div>
+      </main>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorem deserunt minima. Id, deleniti! Itaque libero obcaecati nisi error aut quo, dignissimos quasi at perspiciatis dicta eum magni odit! Dolorem sed porro delectus nobis dignissimos non soluta, nemo minus, amet harum animi possimus corporis nam quo architecto perspiciatis maiores aliquid voluptatem quae, sequi doloribus officiis temporibus? Ea laborum ullam similique quod earum corporis mollitia minus quam nobis placeat veritatis praesentium, delectus nam sunt voluptate sapiente sed sequi quo unde voluptatibus! Earum culpa consequatur perspiciatis, cupiditate possimus hic nemo deleniti est obcaecati? Necessitatibus deleniti odio vel sint adipisci expedita, quibusdam cupiditate beatae veniam, magnam illo libero ab quaerat dolorum porro molestias officiis incidunt sapiente saepe ut natus modi at? Adipisci pariatur accusantium aliquam fugiat vitae, autem consequuntur, repudiandae ducimus omnis itaque placeat nesciunt cumque officiis animi culpa eum minus. Vero pariatur at totam tenetur consequuntur eligendi doloremque, iure rem inventore, libero consequatur a accusantium temporibus obcaecati amet rerum velit impedit, placeat delectus animi distinctio. Debitis expedita praesentium blanditiis laboriosam, laudantium provident totam natus tempora ut, eligendi odio, delectus quibusdam vero error neque repellendus! Perferendis dolor nihil dolore, assumenda, aperiam corporis asperiores sunt voluptates explicabo est quaerat, distinctio aliquam accusantium cumque enim. Hic asperiores rerum, alias molestias aspernatur minus adipisci beatae, eaque voluptas temporibus animi. Quia nostrum eius itaque eveniet at ea est voluptate optio dolor. Perferendis dignissimos laudantium pariatur quo, expedita veniam repellendus explicabo, obcaecati quia fugiat ab in suscipit cum distinctio, facere inventore tenetur itaque debitis quibusdam quidem. Possimus provident maxime quisquam sunt quae, odit quam tempore laborum repellendus fugiat labore autem similique nobis excepturi, velit rerum, quibusdam dolore praesentium. Incidunt repellendus odio, accusamus nihil ea eius ratione reiciendis corporis vero quidem alias tempore quod expedita minima assumenda a? Et, commodi! Mollitia eligendi quas quod, quisquam porro laudantium culpa sint nulla accusamus assumenda. Eaque sint delectus, consequuntur impedit laborum ratione asperiores temporibus maxime fuga, neque, repudiandae doloremque aliquam voluptas quia minus nulla ex! Aut explicabo repellat nemo dolores sed et laborum cum dicta odit fugiat officia, labore cumque at quo aliquid obcaecati quos minima aliquam! Dolores perspiciatis, recusandae minima nostrum architecto repellendus exercitationem odio ipsum harum qui aperiam quam cum obcaecati id praesentium aliquam atque enim? Consequuntur, necessitatibus amet. Maiores totam ut ea porro ducimus sit atque laudantium autem sint suscipit, eveniet ex ipsum placeat provident, quibusdam incidunt odit? Officia voluptatem commodi dolorum quos dolore quam pariatur facere accusantium. Necessitatibus quaerat voluptatibus natus commodi iure provident ab eligendi porro inventore nemo? Omnis est nesciunt quod natus corrupti dignissimos? Placeat totam ipsam reiciendis illum at culpa dolorum accusamus perferendis, rerum ab ex numquam adipisci accusantium quaerat, eaque labore laborum repudiandae necessitatibus aperiam ullam voluptatem. Repudiandae delectus minima voluptas distinctio. Pariatur atque deleniti, perferendis sunt, quia nobis sequi alias facilis incidunt suscipit temporibus quibusdam dolores repellendus placeat aspernatur ullam neque, exercitationem et eos obcaecati odio quis minus? Itaque ab doloribus facere repellat corporis mollitia incidunt? Voluptates alias dicta quidem molestiae sunt doloremque earum aliquam molestias autem excepturi necessitatibus, totam neque! Quia saepe aut necessitatibus maiores architecto eveniet eligendi, expedita minus quaerat possimus, consectetur rerum obcaecati iure impedit quis nemo! Fugiat laborum, tempora officiis et adipisci a explicabo deleniti neque. Inventore error nobis dolor explicabo doloribus beatae suscipit accusantium, iusto, necessitatibus voluptatum provident in ab quia architecto a eveniet, blanditiis enim fugit cumque placeat! Delectus veritatis cum esse culpa recusandae quidem mollitia quos nemo praesentium harum. Dignissimos blanditiis corrupti sit doloribus, distinctio ullam voluptatum repellendus eius fugiat quod maiores ducimus deserunt unde dolor voluptas libero tempore aliquam aut labore, delectus quis porro! Tempora obcaecati incidunt a corporis deserunt amet inventore repudiandae corrupti?</p>
+      
+  
+    <!-- Your website content goes here -->
+  
+    <!-- Add Bootstrap JS and jQuery script links for toggling the navbar on mobile -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>
