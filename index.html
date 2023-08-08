@@ -1,84 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navbar</title>
-  <!-- Add Bootstrap CSS link -->
+  <title>Brochure</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
     .navbar {
-            background-color: #888;
-            /* Grey color for the background */
-            position: sticky;
-            top: 0;
-            /* Make the navbar sticky at the top */
-            z-index: 999; /* Ensure the navbar is above other elements */
-        }
+      background-color: #C0C0C0;
+      ;
 
-        .navbar-nav {
-            flex-grow: 1;
-            /* Use flex-grow to distribute available space */
-            justify-content: center;
-            /* Center the links in the navbar */
-        }
-
-        .navbar-nav .nav-item {
-            margin-right: 15px;
-            /* Add space between the links */
-        }
-
-        a:hover {
-            background: grey;
-            color: #AAAAAA;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-        }
-    /* Custom CSS */
-    .navbar {
-      background-color: #888; /* Grey color for the background */
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
 
     .navbar-nav {
-      flex-grow: 1; /* Use flex-grow to distribute available space */
-      justify-content: center; /* Center the links in the navbar */
+      flex-grow: 1;
+
+      justify-content: center;
+
     }
 
     .navbar-nav .nav-item {
-      margin-right: 15px; /* Add space between the links */
+      margin-right: 15px;
     }
 
     a:hover {
-        background:grey;
-        color: #AAAAAA;
+            background: #FFCE44;
+            color: #AAAAAA;
+        }
+
+    body {
+      margin: 0;
+      padding: 0;
     }
+
+    .navbar {
+      background-color: white;
+    }
+
+    .navbar-nav {
+      flex-grow: 1;
+      justify-content: center;
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 15px;
+    }
+
+    
+
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+
+    }
+
+    .content {
+      flex: 1;
+
+    }
+
+    .footer {
+      background-color: #B8860B;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .image-container {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+
+    }
+
+    .image-container img {
+      width: 100%;
+      display: block;
+    }
+
+
+    .navbar-logo {
+
+      margin-left: 15px;
+      max-height: 60px;
+     
+      max-width: 100%;
+     
+    }
+    .navbar {
+  background-color: white 
+}
+
+.navbar-nav {
+  display: flex; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.navbar-wrapper {
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  background-color:#B8860B; 
+  padding: 10px; 
+  margin: 0 auto; 
+  max-width: 7000px; 
+  color: white;
+}
+
+
+
+
+
+
+
   </style>
 </head>
+
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a    style="font-size: large; font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="   navbar-brand" href="#">YOGI</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <div>
+    <!-- NAVBAR STARTS -->
+  
+  
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- Replace 'your-logo.png' with the actual path or URL of your logo image -->
+      <img src="media/LOGO (2) png.png" alt="YOGI Logo" class="navbar-logo" />
+      <p style="  padding-top: 14px; color: #B59410; font-size: 30px; font-family: Helvetica Neue;"> YOGI LIMITED</p>
+  
+      <button style="margin-right: 5px;" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav mx-auto"> <!-- Use mx-auto class to center the links -->
-        <a  style="font-size: large; color: black; font-weight: bold;"  class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        <a  style=" font-size: large; color: black; font-weight: bold;" class="nav-item nav-link" href="videos.html">Videos</a>
-        <a  style=" font-size: large;  color: black; font-weight: bold;" class="nav-item nav-link" href="brochure.html">Brochure</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-wrapper"> <!-- Use the wrapper div for the brown background -->
+          <a   style="color: white;" class="nav-item nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          <a   style="color: white;" class="nav-item nav-link" href="videos.html">Videos</a>
+          <a    style="color: white;" class="nav-item nav-link" href="brochure.html">Brochure</a>
+        </div>
+      </div>
+    </nav>
+    
+    
+  
+ 
+  
+  
+    <!-- NAVBAR END -->
+
+    <!-- home starts -->
+    <div class="image-container">
+      <img src="media/42A.jpg" alt="Transparent Image">
+
+    </div>
+    <!-- <div class="image-container">
+        <img src="media/8A.jpg" alt="Transparent Image">
+         
+      </div>
+      <div class="image-container">
+        <img src="media/10A.jpg" alt="Transparent Image">
+         
+      </div>
+      <div class="image-container">
+        <img src="media/13A.jpg" alt="Transparent Image">
+         
+      </div> -->
+    <section id="service_section">
+      <div class="content-below-navbar" class="container-fluid mt-4" style=" background-image: url(./img/bt6.jfif) ;">
+
+
+
+        <div class="container">
+
+
+
+          <div class=" row text-center">
+            <div class="col-lg-4 col-md-4 col-12 mb-3 mx-auto" style="text-align: center;">
+              <div class="card  ">
+                <img class="card-img-top" src="media/8A.jpg" alt="Card image">
+                <div class="card-body">
+
+                  <div class="container mt-3">
+                    <a href="http://yogiltd.com/" class="btn btn-primary">More</a>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-4 col-12 mb-3 mx-auto" style="text-align: center;">
+              <div class="card  ">
+                <img class="card-img-top" src="media/10A.jpg" alt="Card image">
+                <div class="card-body">
+
+
+                  <div class="container mt-3">
+                    <a href="http://yogiltd.com/" class="btn btn-danger">More</a>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-4 col-12 mb-3 mx-auto" style="text-align: center;">
+              <div class="card  ">
+                <img class="card-img-top" src="media/13A.jpg" alt="Card image">
+                <div class="card-body">
+
+
+                  <div class="container mt-3">
+                    <a href="http://yogiltd.com/" class="btn btn-dark">More</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
 
       </div>
+    </section>
+
+
+
+
+    <!-- FOOTER STARTS -->
+    <div class="content">
+
     </div>
-  </nav>
+    <footer class="footer">
+      <div class="footer-content">
+        <p><i class="fas fa-map-marker-alt"></i>B/404, The Capital, G-Block, Bandra Kurla Complex, Behind ICICI Bank,
+          Bandra East, Mumbai 400051</p>
+        <p><i class="fas fa-phone"></i>  +91 9371396718</p>
+        <p><i class="fas fa-envelope"></i> yogi@gmail.com</p>
+        <p>&#x1F30D; <a   style="  text-decoration: none;  color: white;" href="http://yogiltd.com/"> www.yogiltd.com</a></p>
+        <p style="font-weight: bold;">2023 YOGI BUILDERS. All rights reserved.</p>
+        
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
 
-  <!-- Your website content goes here -->
-
-  <!-- Add Bootstrap JS and jQuery script links for toggling the navbar on mobile -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
+</html>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
